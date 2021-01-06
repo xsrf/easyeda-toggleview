@@ -1,0 +1,10 @@
+{
+	"name": "ToggleView",
+	"description": "Allows you to switch the PCB View between Top and Bottom View.",
+	"version": "1.0",
+	"homepage": "https://github.com/xsrf/easyeda-toggleview",
+	"icons": {
+		"default": "icon.svg"
+	},
+	"scripts": [ "main.js" ]
+}
