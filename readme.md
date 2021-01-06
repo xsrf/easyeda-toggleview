@@ -4,6 +4,8 @@ Download this code, open [EasyEDA](https://easyeda.com/editor), go to "Advanced"
 
 A "ToggleView" Menu should appear in the main menu in PCB view.
 
+<img src="EasyEDA-ToggleView.gif" alt="Screenshot of EasyEDA Menu with ToggleView Button"/>
+
 Known Issues
 ------------
 The X ruler is not flipped correctly
