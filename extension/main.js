@@ -1,6 +1,7 @@
 const extensionId = 'extension-toggleview-id'.split('-')[1]; // this format is needed to set the Extension ID during install
 const manifest = easyeda.extension.instances[extensionId].manifest;
 const instance = easyeda.extension.instances[extensionId];
+var defaultFlipped = false;
 
 
 /*
@@ -179,7 +180,7 @@ const initObserver = () => {
 
 const layerChanged = () => {
 	layerId = getActiveLayerId();
-	setFlipped(isAutoToggleOnLayer(layerId));
+	setFlipped(defaultFlipped || isAutoToggleOnLayer(layerId));
 }
 
 const setAutoToggleOnLayer = (layerId,checked) => {
@@ -224,7 +225,8 @@ const getFlipped = () => {
 }
 
 const toggle = () => {
-	setFlipped(!getFlipped());
+	defaultFlipped = !getFlipped();
+	setFlipped(defaultFlipped);
 }
 
 const getActiveLayerId = () => {
