@@ -1,10 +1,16 @@
 EasyEDA ToggleView Extension
 ============================
-Download this code, open [EasyEDA](https://easyeda.com/editor), go to "Advanced" > "Extensions" > "Extensions Settings ..." > "Load Extension..." > "Select Files ..." > Select all files from the "extension" directory > "Load Extension".
+Download [extension.zip from Releases](https://github.com/xsrf/easyeda-toggleview/releases) and extract the files to your disc. Open [EasyEDA](https://easyeda.com/editor), go to "Advanced" > "Extensions" > "Extensions Settings ..." > "Load Extension..." > "Select Files ..." > Select all files from the extracted directory > "Load Extension".
 
 A "ToggleView" Menu should appear in the main menu in PCB view.
 
 <img src="EasyEDA-ToggleView.gif" alt="Screenshot of EasyEDA Menu with ToggleView Button"/>
+
+Features
+--------
+Click `ToggleView` to toggle the current PCB editor view between regular and flipped view.
+
+In the `Flip on Layer` menu select the layers which, when activated, should always be flipped automatically. You can always use `ToggleLayer` to override this.
 
 Known Issues
 ------------
