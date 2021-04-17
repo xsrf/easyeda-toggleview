@@ -2,8 +2,8 @@ const extensionId = 'extension-toggleview-id'.split('-')[1]; // this format is n
 const manifest = easyeda.extension.instances[extensionId].manifest;
 const instance = easyeda.extension.instances[extensionId];
 const Helper = instance.Helper; // Helper class declared in easyeda-helper.js
-
 var defaultFlipped = false;
+const DOMIdPrefix = extensionId + '-' + Math.random().toString(36).substr(2);
 
 api('createToolbarButton', {
 	icon: api('getRes', { file: 'icon.svg' }),
@@ -23,25 +23,25 @@ api('createToolbarButton', {
 				{
 					text: 'Bottom Copper',
 					group: 'checkbox:autoToggleLayer',
-					id: `${extensionId}-layer-2`,
+					id: `${DOMIdPrefix}-layer-2`,
 					cmd: Helper.createCommand(()=>{saveConfig()})
 				},
 				{
 					text: 'Bottom Silk',
 					group: 'checkbox:autoToggleLayer',
-					id: `${extensionId}-layer-4`,
+					id: `${DOMIdPrefix}-layer-4`,
 					cmd: Helper.createCommand(()=>{saveConfig()})
 				},
 				{
 					text: 'Bottom Paste',
 					group: 'checkbox:autoToggleLayer',
-					id: `${extensionId}-layer-6`,
+					id: `${DOMIdPrefix}-layer-6`,
 					cmd: Helper.createCommand(()=>{saveConfig()})
 				},
 				{
 					text: 'Bottom Mask',
 					group: 'checkbox:autoToggleLayer',
-					id: `${extensionId}-layer-8`,
+					id: `${DOMIdPrefix}-layer-8`,
 					cmd: Helper.createCommand(()=>{saveConfig()})
 				}
 			]
@@ -157,12 +157,12 @@ function layerChanged() {
 }
 
 function setAutoToggleOnLayer(layerId,checked) {
-	let selector = `#${extensionId}-layer-${layerId}`;
+	let selector = `#${DOMIdPrefix}-layer-${layerId}`;
 	$(selector).menu('setChecked',{target:$(selector),checked: !!checked});
 }
 
 function isAutoToggleOnLayer(layerId) {
-	let selector = `#${extensionId}-layer-${layerId}`;
+	let selector = `#${DOMIdPrefix}-layer-${layerId}`;
 	return $(selector).menu('isChecked');
 }
 
