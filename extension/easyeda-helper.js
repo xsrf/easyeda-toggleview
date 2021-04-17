@@ -104,8 +104,8 @@ instance.Helper = class Helper {
                 $.messager.show({
                     title: 'Update available',
                     msg: `<table>
-                            <tr><td class="i18n">Installed:</td><td><span class="i18n">${instance.manifest.name}</span> ${instance.manifest.version}</td></tr>
-                            <tr><td class="i18n">Available:</td><td><span class="i18n">${onlineManifest.name}</span> ${onlineManifest.version}</td></tr>
+                            <tr><td><span class="i18n">Installed</span>:</td><td><span class="i18n">${instance.manifest.name}</span> ${instance.manifest.version}</td></tr>
+                            <tr><td><span class="i18n">Available</span>:</td><td><span class="i18n">${onlineManifest.name}</span> ${onlineManifest.version}</td></tr>
                         </table>
                         <div class="dialog-button">
                             <a cmd="${cmdUpdatePage};dialog-close" class="l-btn"><span class="l-btn-left"><span class="l-btn-text i18n">Download</span></span></a>
