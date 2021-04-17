@@ -7,11 +7,11 @@ const DOMIdPrefix = extensionId + '-' + Math.random().toString(36).substr(2);
 
 api('createToolbarButton', {
 	icon: api('getRes', { file: 'icon.svg' }),
-	title: 'Toggle PCB view',
+	title: 'Toggle View',
 	fordoctype: 'pcb,pcblib',
 	menu:[
 		{
-			text: "Toggle View", 
+			text: 'Toggle View', 
 			cmd: Helper.createCommand(()=>{toggle();}), 
 			title: 'Toggle PCB View between Top and Bottom',
 			icon: api('getRes', { file: 'icon.svg' })
@@ -21,25 +21,25 @@ api('createToolbarButton', {
 			title: 'Flip view automatically for these Layers',
 			submenu: [
 				{
-					text: 'Bottom Copper',
+					text: 'BottomLayer',
 					group: 'checkbox:autoToggleLayer',
 					id: `${DOMIdPrefix}-layer-2`,
 					cmd: Helper.createCommand(()=>{saveConfig()})
 				},
 				{
-					text: 'Bottom Silk',
+					text: 'BottomSilkLayer',
 					group: 'checkbox:autoToggleLayer',
 					id: `${DOMIdPrefix}-layer-4`,
 					cmd: Helper.createCommand(()=>{saveConfig()})
 				},
 				{
-					text: 'Bottom Paste',
+					text: 'BottomPasteMaskLayer',
 					group: 'checkbox:autoToggleLayer',
 					id: `${DOMIdPrefix}-layer-6`,
 					cmd: Helper.createCommand(()=>{saveConfig()})
 				},
 				{
-					text: 'Bottom Mask',
+					text: 'BottomSolderMaskLayer',
 					group: 'checkbox:autoToggleLayer',
 					id: `${DOMIdPrefix}-layer-8`,
 					cmd: Helper.createCommand(()=>{saveConfig()})

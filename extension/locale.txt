@@ -1,0 +1,43 @@
+﻿[en]
+# Installed = Installed
+# Available = Available
+# Update available = Update available
+# Toggle View = Toggle View
+# Toggle PCB View between Top and Bottom = Toggle PCB View between Top and Bottom
+# Flip on Layer = Flip on Layer
+# Visit GitHub Page = Visit GitHub Page
+# Flip view automatically for these Layers = Flip view automatically for these Layers
+# Allows you to switch the PCB View between Top and Bottom View = Allows you to switch the PCB View between Top and Bottom View
+
+[de]
+Installed = Installiert
+Available = Verfügbar
+Update available = Update verfügbar
+Toggle View = Ansicht umschalten
+Toggle PCB View between Top and Bottom = PCB Ansicht von Oben/Unten umschalten
+Flip on Layer = Lagen spiegeln
+Visit GitHub Page = GitHub Seite öffnen
+Flip view automatically for these Layers = Ansicht für diese Ebenen automatisch spiegeln
+Allows you to switch the PCB View between Top and Bottom View = Ermöglicht das Umschalten der Ansicht von Oben oder Unten
+
+[es]
+# Installed = Installed
+# Available = Available
+# Update available = Update available
+# Toggle View = Toggle View
+# Toggle PCB View between Top and Bottom = Toggle PCB View between Top and Bottom
+# Flip on Layer = Flip on Layer
+Visit GitHub Page = Visita la página de GitHub
+# Flip view automatically for these Layers = Flip view automatically for these Layers
+# Allows you to switch the PCB View between Top and Bottom View = Allows you to switch the PCB View between Top and Bottom View
+
+[zh-hans]
+Installed = 已安装
+Available = 可用
+Update available = 可用更新
+# Toggle View = Toggle View
+# Toggle PCB View between Top and Bottom = Toggle PCB View between Top and Bottom
+# Flip on Layer = Flip on Layer
+Visit GitHub Page = 访问 Github 主页
+# Flip view automatically for these Layers = Flip view automatically for these Layers
+# Allows you to switch the PCB View between Top and Bottom View = Allows you to switch the PCB View between Top and Bottom View
