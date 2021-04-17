@@ -8,7 +8,7 @@ var defaultFlipped = false;
 api('createToolbarButton', {
 	icon: api('getRes', { file: 'icon.svg' }),
 	title: 'Toggle PCB view',
-	fordoctype: 'pcb',
+	fordoctype: 'pcb,pcblib',
 	menu:[
 		{
 			text: "Toggle View", 
