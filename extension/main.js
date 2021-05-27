@@ -183,6 +183,7 @@ function setFlipped(flipped) {
 		editor.contentDocument.removeEventListener('keypress',flipkeyboardevent,{capture: true});
 		editor.style.transform = '';
 		ruler.style.transform = '';
+		editor.contentDocument.querySelector('#flipStyle').remove();
 	} else {
 		editor.addEventListener('mousemove',flipmousevent,{capture: true});
 		editor.addEventListener('mouseup',flipmousevent,{capture: true});
@@ -192,6 +193,10 @@ function setFlipped(flipped) {
 		editor.contentDocument.addEventListener('keypress',flipkeyboardevent,{capture: true});
 		editor.style.transform = 'scaleX(-1)';
 		ruler.style.transform = 'scaleX(-1)';
+		var style = editor.contentDocument.createElement('style');
+		style.id = 'flipStyle';
+		style.innerText = '#gNets text { transform-origin: center center; transform-box: fill-box; transform: scaleX(-1); }';
+		editor.contentDocument.body.appendChild(style);
 	}
 }
 
