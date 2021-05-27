@@ -195,7 +195,7 @@ function setFlipped(flipped) {
 		ruler.style.transform = 'scaleX(-1)';
 		var style = editor.contentDocument.createElement('style');
 		style.id = 'flipStyle';
-		style.innerText = '#gNets text { transform-origin: center center; transform-box: fill-box; transform: scaleX(-1); }';
+		style.innerText = '#gNets text, #textInputBox { transform-origin: center center; transform-box: fill-box; transform: scaleX(-1); }';
 		editor.contentDocument.body.appendChild(style);
 	}
 }
